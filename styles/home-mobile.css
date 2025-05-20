@@ -1,0 +1,28 @@
+/* Base styles for the application */
+:root {
+  --primary-color: #6b4226; /* Rich brown */
+  --secondary-color: #a67c52; /* Earthy tan */
+  --accent-color: #c9a66b; /* Soft gold */
+  --background-color: #f4f1ee; /* Light earth */
+  --text-color: #2c1b0f;
+}
+
+@media screen and (max-width: 500px) {
+  /* main content */
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .serices {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  #main-services, #service-hook {
+    grid-column: 1/2;
+    width: 80vw;
+    border-radius: 10px;
+  }
+}

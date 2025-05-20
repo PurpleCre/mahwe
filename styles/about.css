@@ -1,0 +1,169 @@
+/* Base styles for the application */
+:root {
+  --primary-color: #6b4226; /* Rich brown */
+  --secondary-color: #a67c52; /* Earthy tan */
+  --accent-color: #c9a66b; /* Soft gold */
+  --background-color: #f4f1ee; /* Light earth */
+  --text-colo: #dacccc;
+  --text-color2: #2c1b0f;
+}
+
+/* About Page */
+
+.about-page {
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color2);
+}
+
+.about-page h2 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.about-page h3 {
+  font-size: 1.5rem;
+  color: var(--text-color2);
+}
+
+.about-page p,
+.about-page li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-page ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* intro section */
+#about-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  p {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+}
+
+/* about nav thingy */
+.about-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding: 0 0 20px 30px;
+}
+
+.about-nav a {
+  color: var(--text-colo);
+  font-size: 1.2rem;
+  padding: 10px;
+  text-decoration: underline dotted;
+}
+
+/* mission section */
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--text-colo);
+}
+
+/* why us section */
+.us-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--background-color);
+  margin: 260px 0 20px 0;
+}
+
+.us-container img {
+  z-index: 200;
+  transform: translateY(-200px);
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.us-div {
+  z-index: 500;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  /* width: 400px; */
+  height: 70%;
+  transform: translate(200px, 100px);
+  color: var(--text-colo);  
+}
+
+.us-div h3 {
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--text-colo);
+}
+
+/* testimonial section */
+.testimonial {
+  margin-top: 3rem;
+  background: #fff7eb;
+  padding: 2rem;
+  border-left: 5px solid var(--accent-color);
+  font-style: italic;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--text-color2);
+}
+
+.contact-cta {
+  background: var(--accent-color);
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--text-color2);
+  border-radius: 5px;
+}
+
+.contact-cta .cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+.contact-cta .cta-button:hover {
+  background-color: var(--secondary-color);
+}
