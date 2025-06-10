@@ -1,0 +1,107 @@
+/* Base styles for the application */
+:root {
+  --primary-color: #6b4226; /* Rich brown */
+  --secondary-color: #a67c52; /* Earthy tan */
+  --accent-color: #c9a66b; /* Soft gold */
+  --background-color: #f4f1ee; /* Light earth */
+  --text-color: #dacccc;
+  --text-color2: #2c1b0f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0c1e29;
+}
+
+.expo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--background-color2);
+}
+
+.expo-hero {
+  background: url('../images/gemstone.jpg') center/cover no-repeat;
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expo-hero .overlay {
+  background-color: rgba(12, 30, 41, 0.75);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+#countdown {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.expo-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-carousel img {
+  height: 200px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.expo-cta {
+  background: #e7b06c;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0c1e29;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.expo-registration input,
+.expo-registration button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .expo-highlights {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .highlight {
+    width: 30%;
+  }
+}

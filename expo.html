@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Panashe Gonese" />
+    <meta
+      name="description"
+      content="Mahwe - A simple and elegant web application"
+    />
+    <meta name="keywords" content="Mahwe, web application, simple, elegant" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/expo.css" />
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/expo.js" defer></script>
+    <title>Mahwe - Home</title>
+  </head>
+  <body>
+    <header id="main-header" class="header">
+      <a href="./index.html"
+        ><img src="./images/mahwe-dark.jpg" alt="" class="logo"
+      /></a>
+      <a href="#" id="menu"></a>
+      <nav class="parallelogram">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">Who We Are</a>
+        <a href="./about.html">What We Do</a>
+        <a href="./about.html">Our Works</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./expo.html" class="active">Our Expo</a>
+      </nav>
+    </header>
+    <section id="expo" class="expo-page">
+      <div class="expo-hero">
+        <div class="overlay">
+          <h1>Mahwe Mineral & Gemstone Expo 2025</h1>
+          <p>
+            Showcasing Zimbabwe’s finest small-scale mining products to the
+            world.
+          </p>
+          <div id="countdown"></div>
+        </div>
+      </div>
+
+      <div class="expo-content container">
+        <h2>What to Expect</h2>
+        <p>
+          Join us for a dynamic exhibition featuring Zimbabwe’s rich and diverse
+          mineral portfolio — from gold and chrome to exquisite precious stones.
+          Explore curated showcases, live demos, and direct trade opportunities.
+        </p>
+
+        <div class="expo-highlights">
+          <div class="highlight">
+            <h3>🌍 Global Buyer Access</h3>
+            <p>
+              Connect directly with vetted international buyers and industry
+              leaders in a secure, trade-ready environment.
+            </p>
+          </div>
+          <div class="highlight">
+            <h3>💎 Precious Stones Pavilion</h3>
+            <p>
+              Discover ethically sourced gemstones from Zimbabwe’s small-scale
+              miners, presented for international appreciation and investment.
+            </p>
+          </div>
+          <div class="highlight">
+            <h3>📄 Documentation & Compliance Hub</h3>
+            <p>
+              On-site guidance for miners on formalizing export documents with
+              MMCZ and securing value-driven trade terms.
+            </p>
+          </div>
+        </div>
+
+        <div class="expo-gallery">
+          <h2>Gallery Highlights</h2>
+          <div class="image-carousel">
+            <img src="./images/gemstone.jpg" alt="Gold Display" />
+            <img src="./images/gemstone.jpg" alt="Gemstone Booth" />
+            <img src="./images/gemstone.jpg" alt="Live Mining Demo" />
+          </div>
+        </div>
+
+        <div class="expo-cta">
+          <h2>Join the Exhibition</h2>
+          <p>
+            Whether you're a buyer, investor, or enthusiast, this is your
+            gateway to the best of Zimbabwe’s small-scale mining. Be part of the
+            story. Support ethical, local mining.
+          </p>
+          <a href="#contact" class="cta-button">Register or Get in Touch</a>
+        </div>
+
+        <div class="expo-registration">
+          <h2>Register Now</h2>
+          <form id="registration-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Organization" />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="expo-download">
+          <h2>Download Brochure</h2>
+          <a href="Mahwe_Expo_Brochure.pdf" download class="cta-button"
+            >Download PDF</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

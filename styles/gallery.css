@@ -1,0 +1,134 @@
+/* Base styles for the application */
+:root {
+  --primary-color: #6b4226; /* Rich brown */
+  --secondary-color: #a67c52; /* Earthy tan */
+  --accent-color: #c9a66b; /* Soft gold */
+  --background-color: #f4f1ee; /* Light earth */
+  --text-colo: #dacccc;
+  --text-color2: #2c1b0f;
+}
+
+/* Show case Page */
+#gallery {
+  background-color: var(--primary-color);
+}
+.gallery-header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.gallery-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.gallery-header p {
+  color: var(--text-colo);
+  font-size: 1.1rem;
+}
+
+.gallery-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery-filter button {
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gallery-filter button:hover,
+.gallery-filter button.active {
+  background: var(--accent-color);
+  color: var(--text-color2);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background: var(--secondary-color);
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 282px;
+  aspect-ratio: 1/1;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: var(--background-color) ;
+  color: var(--primary-color);
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ... previous styles from earlier response ... */
+
+/* Lightbox Modal */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.lightbox-caption {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide filtered items */
+.gallery-item.hidden {
+  display: none;
+}
