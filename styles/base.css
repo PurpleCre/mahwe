@@ -186,8 +186,8 @@ footer a {
 
 .footer-info {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: flex-end;
+  gap: 100px;
 }
 
 .footer-info h2 {
