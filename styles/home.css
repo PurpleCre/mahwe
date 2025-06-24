@@ -147,7 +147,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
-  gap: 20px;
+  gap: 40px;
   background-color: var(--background-color);
   color: var(--text-colo);
 }
@@ -159,8 +159,8 @@
 }
 
 .about-div img {
-  width: 100%;
-  height: auto;
+  width: 650px;
+  aspect-ratio: 4/3;
   border-radius: 10px;
 }
 
@@ -172,6 +172,7 @@
 
 #div1 {
   left: 420px;
+  margin-bottom: 50px;
 }
 
 /* second about div */
@@ -348,43 +349,43 @@ button {
 }
 
 .superHero1 {
-  background-image: url(../images/stones/new/11462243.png);
+  background-image: url(../images/stones/new/aegirine.jpeg);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
 }
 .superHero2 {
-  background: url(../images/stones/new/1.png);
+  background: url(../images/stones/new/africanredruby.jpeg);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
 }
 .superHero3 {
-  background: url(../images/stones/new/2.png);
+  background: url(../images/stones/new/alexandrite.webp);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
 }
 .superHero4 {
-  background: url(../images/stones/new/3.png);
+  background: url(../images/stones/new/amazonite.jpeg);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
 }
 .superHero5 {
-  background: url(../images/stones/new/4.png);
+  background: url(../images/stones/new/amethyst.png);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
 }
 .superHero6 {
-  background: url(../images/stones/new/5.png);
+  background: url(../images/stones/new/apatite.jpeg);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
 }
 .superHero7 {
-  background: url(../images/stones/new/11462240.png);
+  background: url(../images/stones/new/aquamarine.png);
   background-repeat: no-repeat;
   background-size: 340px 340px;
   border-radius: 50px !important;
