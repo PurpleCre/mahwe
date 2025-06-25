@@ -116,7 +116,7 @@
   padding: 10px 20px;
   border-radius: 20px;
   transform: translate(200px, 1px);
-  color: var(--text-colo);  
+  color: var(--text-colo);
 }
 
 .us-div h3 {
@@ -197,4 +197,108 @@ figcaption {
 
 .contact-cta .cta-button:hover {
   background-color: var(--secondary-color);
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 2rem 1rem;
+  }
+
+  .about-page h2 {
+    font-size: 2rem;
+  }
+
+  .about-page h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-page p,
+  .about-page li {
+    font-size: 1rem;
+  }
+
+  #about-intro {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .vision li{
+    text-align: left;
+  }
+
+  .us-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .us-container img {
+    transform: translateY(0);
+    width: 100%;
+    height: auto;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .prof-images {
+    flex-direction: column;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Additional styles for smaller screens */
+@media (max-width: 500px) {
+  .about-page h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-page h3 {
+    font-size: 1.1rem;
+  }
+
+  .about-page p,
+  .about-page li {
+    font-size: 0.9rem;
+  }
+
+  .about-nav a {
+    font-size: 1rem;
+  }
+
+  .mission,
+  .vision ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .us-container {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+
+  .us-div {
+    transform: translate(0, -50px);
+    margin-bottom: -50px;
+  }
+}
+/* Team section adjustments */
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+  }
+
+  .prof-images {
+    flex-direction: column;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
 }
