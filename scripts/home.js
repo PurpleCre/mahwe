@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const CaroSTimer = 2000;
   let CaroAutoplay = setInterval(() => CaroSlider.next(), CaroSTimer);
 
-  //  ------ Mouseenter Event
-  CaroS.onmouseenter = function (e) {
-    clearInterval(CaroAutoplay);
-    console.log(e.type + "mouse detected");
-  };
+  // //  ------ Mouseenter Event
+  // CaroS.onmouseenter = function (e) {
+  //   clearInterval(CaroAutoplay);
+  //   console.log(e.type + "mouse detected");
+  // };
 
   //  ------ Mouseleave Event
   CaroS.onmouseleave = function (e) {
@@ -59,10 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   //  ------ Gesture Tap Event
-  hammer.on("tap", function (e) {
-    clearInterval(CaroAutoplay);
-    console.log(e.type + "gesture detected");
-  });
+  // hammer.on("tap", function (e) {
+  //   clearInterval(CaroAutoplay);
+  //   console.log(e.type + "gesture detected");
+  // });
 
   //  ------ Gesture Swipe Event
   hammer.on("swipe", function (e) {
