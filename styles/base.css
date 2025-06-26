@@ -357,7 +357,7 @@ footer a {
     right: 0;
     width: 100%;
     z-index: 20;
-    background-image: linear-gradient(to right, #362300, #e4e6e5);
+    background-image: linear-gradient(to right, var(--primary-color), #e4e6e5);
   }
   nav.show a {
     display: block;
