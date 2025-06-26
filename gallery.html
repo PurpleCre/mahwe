@@ -9,7 +9,13 @@
       content="Mahwe - A simple and elegant web application"
     />
     <meta name="keywords" content="Mahwe, web application, simple, elegant" />
-    <link rel="shortcut icon" href="./fav.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./fav.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/gallery.css" />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
@@ -30,8 +36,8 @@
       <nav class="parallelogram">
         <a href="./index.html">Home</a>
         <a href="./about.html">Who We Are</a>
-        <a href="./about.html">What We Do</a>
-        <a href="./about.html">Our Works</a>
+        <a href="./about.html#us">Why Us</a>
+        <a href="./about.html#team">Our Team</a>
         <a href="./gallery.html" class="active">Gallery</a>
         <a href="./expo.html">Our Expo</a>
       </nav>
@@ -53,279 +59,555 @@
       </section>
       <section class="gallery-grid">
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/aegirine.jpeg" alt="Aegirine" loading="lazy" />
+          <img
+            src="./images/stones/new/aegirine.jpeg"
+            alt="Aegirine"
+            loading="lazy"
+          />
           <div class="caption">Aegirine</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/africanredruby.jpeg" alt="African Red Ruby" loading="lazy" />
+          <img
+            src="./images/stones/new/africanredruby.jpeg"
+            alt="African Red Ruby"
+            loading="lazy"
+          />
           <div class="caption">African Red Ruby</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/alexandrite.webp" alt="Alexandrite" loading="lazy" />
+          <img
+            src="./images/stones/new/alexandrite.webp"
+            alt="Alexandrite"
+            loading="lazy"
+          />
           <div class="caption">Alexandrite</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/alexandrite1.webp" alt="Alexandrite" loading="lazy" />
+          <img
+            src="./images/stones/new/alexandrite1.webp"
+            alt="Alexandrite"
+            loading="lazy"
+          />
           <div class="caption">Alexandrite</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/alexandrite2.webp" alt="Alexandrite" loading="lazy" />
+          <img
+            src="./images/stones/new/alexandrite2.webp"
+            alt="Alexandrite"
+            loading="lazy"
+          />
           <div class="caption">Alexandrite</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/amazonite.jpeg" alt="Amazonite" loading="lazy" />
+          <img
+            src="./images/stones/new/amazonite.jpeg"
+            alt="Amazonite"
+            loading="lazy"
+          />
           <div class="caption">Amazonite</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/amethyst.png" alt="Amethyst" loading="lazy" />
+          <img
+            src="./images/stones/new/amethyst.png"
+            alt="Amethyst"
+            loading="lazy"
+          />
           <div class="caption">Amethyst</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/amethyst1.png" alt="Amethyst" loading="lazy" />
+          <img
+            src="./images/stones/new/amethyst1.png"
+            alt="Amethyst"
+            loading="lazy"
+          />
           <div class="caption">Amethyst</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/apatite.jpeg" alt="Apatite" loading="lazy" />
+          <img
+            src="./images/stones/new/apatite.jpeg"
+            alt="Apatite"
+            loading="lazy"
+          />
           <div class="caption">Apatite</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/aquamarine (2).jpeg" alt="Aquamarine" loading="lazy" />
+          <img
+            src="./images/stones/new/aquamarine (2).jpeg"
+            alt="Aquamarine"
+            loading="lazy"
+          />
           <div class="caption">Aquamarine</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/aquamarine (3).jpeg" alt="Aquamarine" loading="lazy" />
+          <img
+            src="./images/stones/new/aquamarine (3).jpeg"
+            alt="Aquamarine"
+            loading="lazy"
+          />
           <div class="caption">Aquamarine</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/aquamarine (4).jpeg" alt="Aquamarine" loading="lazy" />
+          <img
+            src="./images/stones/new/aquamarine (4).jpeg"
+            alt="Aquamarine"
+            loading="lazy"
+          />
           <div class="caption">Aquamarine</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0632.webp" alt="Diamond" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0632.webp"
+            alt="Diamond"
+            loading="lazy"
+          />
           <div class="caption">Brilliant Cut Diamond</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0633.webp" alt="Gold Ore" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0633.webp"
+            alt="Gold Ore"
+            loading="lazy"
+          />
           <div class="caption">Raw Gold Ore</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0634.png" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0634.png"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0635.jpeg" alt="Diamond" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0635.jpeg"
+            alt="Diamond"
+            loading="lazy"
+          />
           <div class="caption">Brilliant Cut Diamond</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0636.jpeg" alt="Gold Ore" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0636.jpeg"
+            alt="Gold Ore"
+            loading="lazy"
+          />
           <div class="caption">Raw Gold Ore</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0637.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0637.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0638.webp" alt="Diamond" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0638.webp"
+            alt="Diamond"
+            loading="lazy"
+          />
           <div class="caption">Brilliant Cut Diamond</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0639.jpeg" alt="Gold Ore" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0639.jpeg"
+            alt="Gold Ore"
+            loading="lazy"
+          />
           <div class="caption">Raw Gold Ore</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0640.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0640.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0641.jpeg" alt="Diamond" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0641.jpeg"
+            alt="Diamond"
+            loading="lazy"
+          />
           <div class="caption">Brilliant Cut Diamond</div>
         </div>
         <div class="gallery-item" data-category="wood" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0642.jpeg" alt="Gold Ore" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0642.jpeg"
+            alt="Gold Ore"
+            loading="lazy"
+          />
           <div class="caption">Raw Gold Ore</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0643.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0643.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0644.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0644.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0645.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0645.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0646.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0646.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0647.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0647.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0648.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0648.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0649.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0649.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0650.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0650.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0651.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0651.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0652.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0652.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0653.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0653.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0654.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0654.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0655.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0655.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0656.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0656.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0657.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0657.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0659.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0659.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0660.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0660.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0661.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0661.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0662.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0662.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0664.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0664.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0665.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0665.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0666.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0666.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0667.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0667.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0668.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0668.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0669.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0669.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0670.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0670.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0671.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0671.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0672.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0672.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0673.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0673.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0674.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0674.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0675.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0675.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0676.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0676.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0678.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0678.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0681.png" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0681.png"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0682.png" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0682.png"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0683.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0683.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0684.webp" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0684.webp"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0685.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0685.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0686.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0686.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0687.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0687.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0688.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0688.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/IMG_0689.jpeg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/IMG_0689.jpeg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/large-vecteezy_assortment-of-colorful-gemstones-and-crystals_54360630_large.jpg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/large-vecteezy_assortment-of-colorful-gemstones-and-crystals_54360630_large.jpg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/nature-3287634_1920 (1).jpg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/nature-3287634_1920 (1).jpg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/rhodochrosite-mineral-sample.jpg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/rhodochrosite-mineral-sample.jpg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <div class="gallery-item" data-category="stones" data-aos="zoom-in">
-          <img src="./images/stones/new/rosasite-calcite-mineral-sample.jpg" alt="Emerald" loading="lazy" />
+          <img
+            src="./images/stones/new/rosasite-calcite-mineral-sample.jpg"
+            alt="Emerald"
+            loading="lazy"
+          />
           <div class="caption">Emerald Crystal</div>
         </div>
         <!-- More gallery items -->
@@ -351,9 +633,8 @@
           <div class="footer-about links">
             <h2>About Us</h2>
             <a href="./about.html">Who We Are</a>
-            <a href="./about.html">What We Do</a>
-            <a href="./about.html">Our Values</a>
-            <a href="./about.html">Our Mission</a>
+            <a href="./about.html#us">Why Us</a>
+            <a href="./about.html#team">Our Team</a>
           </div>
           <!-- <div class="footer-projects links">
             <h2>Projects</h2>
