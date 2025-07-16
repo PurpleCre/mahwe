@@ -60,16 +60,32 @@ body {
 }
 
 .image-carousel {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
   display: flex;
-  /* overflow-x: auto; */
-  gap: 1rem;
-  margin-top: 1rem;
+  width: fit-content;
+  animation: slideRight 30s linear infinite;
 }
 
 .image-carousel img {
   height: 200px;
+  aspect-ratio: 6 / 5;
   border-radius: 5px;
   /* flex-shrink: 0; */
+  transition: transform 0.5s ease;
+}
+
+.carousel-img {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .expo-cta {
@@ -161,3 +177,13 @@ body {
   }
 }
 
+/* Animations */
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
